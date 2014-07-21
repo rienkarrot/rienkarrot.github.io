@@ -82,6 +82,7 @@ a:link {
 }
 a:visited {
 	text-decoration: none;
+	color: #F4E9E9;
 }
 a:hover, a:active, a:focus {
 	text-decoration: none;
