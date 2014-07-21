@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Non-Profit</title>
+	<meta charset="UTF-8">
+	<title>San Francisco Non-Profit Coalition</title>
 <style type="text/css">
 body {
 	background-color:black;
@@ -41,13 +41,15 @@ h4 {
 h1, h3, div.search {
 	text-align:center;
 	}
-/*div.search-wrapper {
-    width: 220px;
+.search-wrapper {
+	float:left;
+    width: 100%;
     margin: 45px auto 50px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4) inset, 0px 1px 0px rgba(255, 255, 255, 0.2);
-	float:left;
+	
 	}
-div.search {
+	/*
+.search {
 	width: 138px;
 	height: 40px;
 	font: bold 15px 'lucida sans','trebuchet MS','Tahoma';
@@ -55,7 +57,7 @@ div.search {
 	background: none repeat scroll 0% 0% rgb(238, 238, 238);
 	border-radius: 3px 0px 0px 3px;
 	}
-div.search_button {
+.search_button {
 	position:relative;
 	float:right;
     border: 0px none;
@@ -69,12 +71,10 @@ div.search_button {
     border-radius: 0px 3px 3px 0px;
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
 }*/
-div, img {
-	/*border:2px solid;*/
+div {
 	border-radius:15px;
-	
 }
-div.menu {
+.menu {
 	text-align:left;
 	background-color:#8FA4B0;
 	color:white;
@@ -86,24 +86,24 @@ div.menu {
 .menu-img {
 	text-align:center;
 }
-div.menu ul {
+.menu ul {
 	list-style-type:none;
 	margin:0;
 	/*padding:0;*/
 	}
-div.menu a {
+.menu a {
 	/*display:block;*/
 	width:60px;
 	}
-div.menu li {
+.menu li {
 	color:black;
 	}
-div#breadcrumbs {
+#breadcrumbs {
 	margin:8px auto;
 	padding:8px 18px;
 	width:360px;
 	}
-div.detail {
+.detail {
 	text-align:left;
 	color:white;
 	padding:25px;
@@ -111,7 +111,7 @@ div.detail {
 	width:360px;
 	background-color:#8FA4B0;
 	}
-div.detail p {
+.detail p {
 	padding-left:15px;
 	padding-right:30px;
 	}
@@ -155,15 +155,16 @@ div.detail p {
            	<li>Sublist Item</li>
         	</ul>
    		</li>
-   		<li><a href="file:///D|/BAVC 2014/Ri'en Karrot/Web Workflow 3-22 + 23/My Class Files/Non-Profit Website Project/about.html">ABOUT</a></li>
-       <li><a href="file:///D|/BAVC 2014/Ri'en Karrot/Web Workflow 3-22 + 23/My Class Files/Non-Profit Website Project/contact.html">CONTACT</a></li>
+   		<li><a href="#about">ABOUT</a></li>
+       <li><a href="#contact">CONTACT</a></li>
 	</ul>
 	</div>
 
 	<div id="breadcrumbs">
-	<a href="file:///D|/BAVC 2014/Ri'en Karrot/Web Workflow 3-22 + 23/My Class Files/Non-Profit Website Project/index.html">Index</a> &gt; <a href="file:///D|/BAVC 2014/Ri'en Karrot/Web Workflow 3-22 + 23/My Class Files/Non-Profit Website Project/navpg1.html">NavPg1</a> &gt; <a href="file:///D|/BAVC 2014/Ri'en Karrot/Web Workflow 3-22 + 23/My Class Files/Non-Profit Website Project/navpg2.html">NavPg2</a> &gt; NavPg3
+	<a href="index.html">Index</a> &gt; <a href="navpg1.html">NavPg1</a> &gt; <a href="navpg2.html">NavPg2</a> &gt; NavPg3
 	</div>
-
+	<!--<div name="about">
+    <div name="contact">-->
 	<div class="detail">
 <h4>BAY AREA VIDEO COALITION</h4>
 	<p>BAVC’s Main Office / Mailing Address:
@@ -187,7 +188,7 @@ Every first Saturday of the month: 9am-3pm</p>
 	<p>Administrative office hours:
 Mon-Fri: 9am-5pm</p>
 	<p>BAVC is wheelchair accessible.</p>
-	</div>
-</div>
+	</div><!--end detail div-->
+</div><!--end container div-->
 </body>
 </html>
