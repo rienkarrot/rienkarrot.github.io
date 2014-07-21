@@ -14,15 +14,16 @@ body {
 	width:100%;
 }
 img {
-	height:180px;
-	width:280px;
+	height:450px;
+	width:600px;
 }
 .container {
 	margin:0 auto;
 	width:100%;
-	text-align:center;
+	/*text-align:center;*/
 }
 #header {
+	text-align:center;
 	background-color: #696;
 	float:left;
 	width:100%;
@@ -30,6 +31,7 @@ img {
 #article-wrapper {
 	float:left;
 	width:100%;
+	text-align:center;
 	background-color: #F93;
 }
 #navbar {
@@ -60,24 +62,28 @@ img {
 }
 @media all and (min-width: 760px) {
 	#navbar {
-		margin:0;
-		padding:0;
 		display:block;
 		float:left;
 		width:100%;
 		background-color:#9CF;
 		font-size:14pt;
+		font-weight:bold;
+	}
+	#navbar ul {
+		margin:0;
+		padding:0;
 	}
 	#navbar li {
 		display:inline;
-		list-style-type:none;
+		text-align:center;
+		/*list-style-type:none;*/
 		width:100%;
+		height:3.5em;
+		line-height:3.5em;
 	}
 	#navbar a {
 		float:left;
 		width:25%;
-		height:2em;
-		line-height:2em;
 		text-decoration:none;
 		color:#2D2C70;
 	}
@@ -94,7 +100,7 @@ img {
 		margin:20px auto;
 	}
 }
-@media all and (min-width: 1000px) {
+@media all and (min-width: 1200px) {
 	/*div {
 		float: left;
 		text-align: center;
@@ -117,13 +123,14 @@ img {
 		background-color:white;
 		width:100%;
 	}
+	/*
 	#navbar {
 		float: right;
 		width: 20%;
-		background: -webkit-linear-gradient(#9CF, #069); /* For Safari 5.1 to 6.0 */
-		background: -o-linear-gradient(#9CF, #069); /* For Opera 11.1 to 12.0 */
-		background: -moz-linear-gradient(#9CF, #069); /* For Firefox 3.6 to 15 */
-		background: linear-gradient(#9CF, #069); /* Standard syntax */
+		background: -webkit-linear-gradient(#9CF, #069);  For Safari 5.1 to 6.0 
+		background: -o-linear-gradient(#9CF, #069);  For Opera 11.1 to 12.0 
+		background: -moz-linear-gradient(#9CF, #069);  For Firefox 3.6 to 15 
+		background: linear-gradient(#9CF, #069);  Standard syntax 
 	}
 	#navbar li {
 		display:block;
@@ -133,13 +140,15 @@ img {
 		height:3em;
 		line-height:3em;		
 	}
+	*/
 	#article-wrapper {
 		background: -webkit-linear-gradient(orange, brown); /* For Safari 5.1 to 6.0 */
 		background: -o-linear-gradient(orange, brown); /* For Opera 11.1 to 12.0 */
 		background: -moz-linear-gradient(orange, brown); /* For Firefox 3.6 to 15 */
 		background: linear-gradient(orange, brown); /* Standard syntax (must be last) */
 		/*background-color: #F93;*/
-		width: 80%;
+		
+		/*width: 80%;*/
 	}
 	button {
 		background-color: green;
@@ -159,18 +168,18 @@ img {
         
         <div id="navbar">
         	<ul>
-            	<li><a href="#">One</a></li>
-                <li><a href="#">Two</a></li>
-                <li><a href="#">Three</a></li>
-                <li><a href="#">Four</a></li>
+            	<li><a href="#one">One</a></li>
+                <li><a href="#two">Two</a></li>
+                <li><a href="#three">Three</a></li>
+                <li><a href="#four">Four</a></li>
         	</ul>
         </div><!--end navbar div-->
         
 		<div id="article-wrapper">
 		<h2>Practice Websites</h2>
 			<div class="article">
-                <h3>Example 1 - Portfolio for Kathryn</h3>
-                <a href="#"><img src="#" /></a>
+                <h3><a name="one"></a>Example 1 - Portfolio for Kathryn</h3>
+                <a href="examples/kathryn/index.html"><img src="img/kathryn-thumb.jpg" /></a>
                 <h3>The Requirement:</h3>
                 <p>
                 	<ul>
@@ -194,11 +203,15 @@ img {
                 <p>I made this site as a reflection of Kathryn's LinkedIn presence, and based the design and colors off of an abstract interpretation of office filing. I used this opportunity to practice readable, clear code structure meant for others to edit.</p>
             </div><!--end article div-->
 			<div class="article">
-			<h3>Example 2</h3>
-            <a href="#"><img src="#" /></a>
+			<h3><a name="two"></a>Example 2</h3>
+            <a href="examples/wagsf/index.html"><img src="img/wagsf-thumb.jpg" /></a>
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</p></div><!--end article div-->
 		<div class="article">
-			<h3>Example 3</h3>
+			<h3><a name="three"></a>Example 3</h3>
+            <a href="examples/nonprofit/index.html"><img src="img/nonprofit-thumb.jpg" /></a>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</p></div><!--end article div-->
+        <div class="article">
+			<h3><a name="four"></a>Example 4</h3>
             <a href="#"><img src="#" /></a>
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</p></div><!--end article div-->
         

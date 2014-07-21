@@ -1,0 +1,146 @@
+body {
+	margin:0;
+	padding:0;
+	background:#DFD7E4;
+}
+header, nav, .navbar, article, aside, footer {
+	display:block;
+	float:left;
+	width:100%;
+}
+p img {
+	display:none;
+}
+.container {
+	text-align:center;
+}
+header {
+	background:rgba(171, 21, 186, 1.0);
+	color:white;
+	font:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+a {
+	font-weight:bold;
+}
+nav {
+}
+.navbar {
+	background:gray;
+	padding:0;
+	margin:0;
+	/*list-style-type:none;*/
+	font-size:16pt;
+}
+.navbar ul {	
+}
+.navbar li {
+	/*display:inline;*/
+	width:100%;
+}
+.navbar a {
+	/*width:6em;*/
+	width:100%;
+	height:3em;
+	line-height:3em;
+	float:left;
+	text-decoration:none;
+	color:white;
+	background-color:#750E7F;
+	/*padding:0.3em 0.6em;*/
+	border-top:1px solid white;
+}
+.navbar a:visited {
+	color:white;
+}
+.navbar a:hover {
+	background-color:#FB6906;
+}
+.navbar a.current {
+	background-color:white;
+	color:black;
+}
+.map {
+	text-align:center;	
+}
+.map img {
+	margin:20px;
+	padding:2px;
+	border:1px solid black;
+	height:650px;
+	width:750px;
+}
+article {
+	text-align:left;
+	background:white;
+}
+p {
+	padding-left:30px;
+	padding-right:30px;
+	font-size:16pt;
+}
+footer{
+	height:2em;
+	line-height:2em;
+	background:#3B0740;
+	color:white;
+}
+@media screen and (min-width:760px) {
+	h1 {
+		font-size:3em;
+	}
+	h3 {
+		font-size:22px;
+	}
+	p {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	.navbar li {
+		display:inline;
+	}
+	/*.navbar li + li {
+		border-left:1px solid white;
+	}*/
+	.navbar a {
+		width:25%;
+		border:none;
+	}
+}
+@media screen and (min-width:1000px) {
+	.container {
+		margin:0 auto;
+		width: 900px;
+	}
+	header {
+		padding:0px;
+		background:url(img/header900.jpg) no-repeat;
+	}
+	.header-overlay {
+		width: 900px;
+    	height: 198px;
+		float:left;
+    	background: rgba(150, 83, 66, 0.6);
+    	background: -webkit-linear-gradient(top, rgba(150, 83, 66,0.6), rgba(0, 0, 0, 0.8)); /* For Safari 5.1 to 6.0 */
+    	background: -o-linear-gradient(bottom, rgba(150, 83, 66,0.6), rgba(0, 0, 0, 0.8)); /* For Opera 11.1 to 12.0 */
+    	background: -moz-linear-gradient(bottom, rgba(150, 83, 66,0.6), rgba(0, 0, 0, 0.8)); /* For Firefox 3.6 to 15 */
+    	background: linear-gradient(to bottom, rgba(150, 83, 66,0.6), rgba(0, 0, 0, 0.8)); /* Standard syntax (must be last) */
+    	filter: alpha(opacity=60); /* IE fix */
+	}
+	h1{
+		padding-top:25px;
+	}
+	p img {
+		display:inline;
+		width:180px;
+		height:239px;
+	}
+	p {
+		padding-right:20%;
+		padding-left:20%;
+	}
+	.navbar a  {
+		border-top:none;
+	}
+	footer {
+		border-radius:0 0 10px 10px;
+	}
