@@ -12,10 +12,11 @@ body {
 	margin: 0;
 	padding:0;
 	width:100%;
+	font-family:"Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
 }
 img {
-	height:450px;
-	width:600px;
+	height:300px;
+	width:400px;
 }
 .container {
 	margin:0 auto;
@@ -27,19 +28,28 @@ img {
 	background-color: #696;
 	float:left;
 	width:100%;
+	font-family: 'Varela Round', sans-serif;
+	background-color: #696;
+	color: white;
 }
 #article-wrapper {
 	float:left;
 	width:100%;
 	text-align:center;
-	background-color: #F93;
+	/*background-color: #F93;*/
+	background-color:#ABA6AF;
 }
 #navbar {
 	display:none;
 }
-.article p, .article ul li {
+.article p {
 	text-align:left;
-	padding:0 10%;
+	padding: 0 10%;
+}
+.article li { /*alternate idea: use quote div type*/
+	text-align:left;
+	list-style-type:none;
+	padding:5px 8%;
 }
 .email {
 	float:left;
@@ -47,6 +57,7 @@ img {
 	height:3em;
 	width:100%;
 	background-color:white;
+	text-align:center;
 }
 #footer {
 	float:left;
@@ -55,18 +66,23 @@ img {
 	line-height:2em;
 	background-color: #966;
 	color: #633;
+	text-align:center;
 }
 .article {
 	/*background-color:black;*/
 	margin: 0 0 50px 0;
 }
 @media all and (min-width: 760px) {
+	img {
+		height:450px;
+		width:600px;
+	}
 	#navbar {
 		display:block;
 		float:left;
 		width:100%;
-		background-color:#9CF;
-		font-size:14pt;
+		background-color:#96B2D7;
+		font-size:.9em;
 		font-weight:bold;
 	}
 	#navbar ul {
@@ -79,9 +95,9 @@ img {
 		/*list-style-type:none;*/
 		width:100%;
 		height:3.5em;
-		line-height:3.5em;
 	}
 	#navbar a {
+		padding:15px 0;
 		float:left;
 		width:25%;
 		text-decoration:none;
@@ -92,8 +108,8 @@ img {
 	}
 	.article {
 		width: 80%;
-		background-color: black;
-		color: white;
+		background-color: #6D6772;
+		color: #F3E8F7;
 		border-radius: 5px;
 		padding: 5px 20px 5px 20px;
 		/*margin: 0px 20px 20px 20px;*/
@@ -113,10 +129,7 @@ img {
 		/*float: none;*/
 	}
 	#header {
-		font-family: 'Varela Round', sans-serif;
-		background-color: #696;
-		color: white;
-		width: 100%;
+		
 		padding: 10px 0px 10px 0px;
 	}
 	.middle-content-wrapper {
@@ -161,25 +174,31 @@ img {
 <body>
 	<div class="container">
 		<div id="header">
-        	<h1>Ri'en Karrot's Web<br />Development Portfolio</h1>
+        	<h1>Ri'en Karrot<br />Web Developer</h1>
         </div><!--end header div-->
 
         <div class="middle-content-wrapper">
         
         <div id="navbar">
         	<ul>
-            	<li><a href="#one">One</a></li>
-                <li><a href="#two">Two</a></li>
-                <li><a href="#three">Three</a></li>
-                <li><a href="#four">Four</a></li>
+            	<li><a href="#one">Project One:<br />
+                	Portfolio for Kathryn</a></li>
+                <li><a href="#two">Project Two:<br />
+                	Event Page for WAG SF</a></li>
+                <li><a href="#three">Project Three:<br />
+                	Non-Profit Mockup</a></li>
+                <li><a href="#four">Project Four:<br />
+                	TBA</a></li>
         	</ul>
         </div><!--end navbar div-->
         
 		<div id="article-wrapper">
-		<h2>Practice Websites</h2>
+		<h2>Website Work - Design and Development</h2>
 			<div class="article">
-                <h3><a name="one"></a>Example 1 - Portfolio for Kathryn</h3>
+                <h3><a name="one"></a>Project One - Portfolio for Kathryn</h3>
                 <a href="examples/kathryn/index.html"><img src="img/kathryn-thumb.jpg" /></a>
+                <h3>Project Overview:</h3>
+                <p>I made this site as a reflection of Kathryn's LinkedIn presence, and based the design and colors off of an abstract interpretation of office filing. I used this opportunity to practice readable, clear code structure meant for others to edit.</p>
                 <h3>The Requirement:</h3>
                 <p>
                 	<ul>
@@ -199,8 +218,7 @@ img {
                 </ul></p>
                 <h3>The Results:</h3>
                 <p>A consistent, fast-loading, professional portfolio website.</p>
-                <h3>Summary:</h3>
-                <p>I made this site as a reflection of Kathryn's LinkedIn presence, and based the design and colors off of an abstract interpretation of office filing. I used this opportunity to practice readable, clear code structure meant for others to edit.</p>
+                
             </div><!--end article div-->
 			<div class="article">
 			<h3><a name="two"></a>Example 2</h3>
@@ -219,7 +237,7 @@ img {
 
         <div class="email"><select><option>Select One</option><option>option1</option><option>option2</option></select><input type="text" /><button>E-Mail</button></div><!--end email div-->
         </div><!--end middle content wrapper div-->
-	<div id="footer">Copyright 2014 Ri'en Karrot</div><!--end footer div-->
+	<div id="footer">&copy; 2014 Ri'en Karrot</div><!--end footer div-->
 	</div><!--end container div-->
 </body>
 </html>

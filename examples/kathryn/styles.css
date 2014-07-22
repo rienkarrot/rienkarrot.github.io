@@ -99,8 +99,8 @@ p a:visited {
 }
 p img {
 	margin:0px;
-	padding:10px;
-	display:block;
+	padding:10px 10px 0 0;
+	display:inline-block;
 	float:left;
 }
 .small {
@@ -229,7 +229,7 @@ section {
 	border-radius: 0 0 0 40px;
 }
 #blue_steel, #assistant {
-	margin:30px 20px 50px 40px;
+	margin:30px 20px 20px 40px;
 	-webkit-border-radius: 70px;
 	-moz-border-radius: 70px;
 	border-radius: 70px;
