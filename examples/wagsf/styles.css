@@ -71,6 +71,9 @@ nav {
 	height:650px;
 	width:750px;
 }
+.calendar-img {
+	text-align:center;
+}
 article {
 	text-align:left;
 	background:white;
