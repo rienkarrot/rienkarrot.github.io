@@ -4,6 +4,7 @@ body {
 	background:#FFF6E1;
 	margin:0;
 	padding:0;
+	font-family:"Aclonica", sans-serif;
 }
 img, object, embed, video {
 	max-width: 100%;
@@ -20,12 +21,12 @@ img, object, embed, video {
 	display: block;
 }
 */
-.fluidList {
+/*.fluidList {
     list-style:none;
     list-style-image:none;
     margin:0;
     padding:0;        
-}
+}*/
 
 /* Mobile Layout: 480px and below. */
   
@@ -40,6 +41,7 @@ img, object, embed, video {
 /*custom*/
 
 nav {
+	
 	text-align:center;
 	font-size:1.5em;
 	font-weight:bold;
@@ -56,8 +58,7 @@ nav {
 	
 }
 header {
-	margin:0;
-	padding:0;
+	line-height:1.8em;
 	background-color:#AF1B1B;
 	color:#FFCE00;
 	text-align:center;
@@ -71,7 +72,14 @@ header {
 }
 header h1 {
 	font-size:4em;
-	margin:10px auto;
+	margin-top:10px;
+	margin-bottom:0px;
+	padding-top:20px;
+	line-height:1.5em;
+}
+header h2 {
+	margin-top:0;
+	padding-top:0;
 }
 #contact {
 	font-weight:bold;
@@ -91,11 +99,16 @@ section {
   	background-clip:         padding-box;
 }
 section h3 {
-	margin:10px auto;
+	margin-top:10px;
+	margin-bottom:0px;
+	padding-bottom:0px;
+}
+section h4 {
+	color:#FFF6E1;
 }
 .menu-main-title {
 	text-align:center;
-	line-height:1em;
+	line-height:2em;
 	background-color:#FFE76B;
 	font-size:1.5em;
 	color:#AF1B1B;
@@ -109,7 +122,6 @@ section h3 {
 }
 .links {
 	display:inline;
-	
 }
 .links a:link {
 	font-size:.8em;
@@ -141,6 +153,8 @@ article p {
 section span {
 	display:inline-block;
 	float:right;
+	margin-left:10px;
+	margin-bottom:10px;
 }
 
 
@@ -166,9 +180,9 @@ display: none;
 @media only screen and (min-width: 481px) {
 
 .gridContainer {
-	width: 87.2727%;
-	padding-left: 1.3636%;
-	padding-right: 1.3636%;
+	width: 84%;
+	padding-left: 3%;
+	padding-right: 3%;
 	clear: none;
 	float: none;
 	margin-left: auto;
@@ -187,7 +201,7 @@ display: none;
 @media only screen and (min-width: 769px) {
 
 .gridContainer {
-	width: 75%;
+	width: 65%;
 	max-width: 1200px;
 	padding: 0;
 	margin: 0 auto;
