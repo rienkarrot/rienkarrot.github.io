@@ -48,9 +48,9 @@ nav {
 	line-height:2em;
 	background-color:#FFE76B;
 	color:red;
-	-webkit-border-radius:0 0 20px 20px;
-	-moz-border-radius:0 0 20px 20px;
-	border-radius:0 0 20px 20px;
+	-webkit-border-radius:0 0 40px 40px;
+	-moz-border-radius:0 0 40px 40px;
+	border-radius:0 0 40px 40px;
 	
 	-webkit-background-clip: padding-box; 
   	-moz-background-clip:    padding; 
@@ -58,6 +58,7 @@ nav {
 	
 }
 header {
+	margin-top:10px;
 	line-height:1.8em;
 	background-color:#AF1B1B;
 	color:#FFCE00;
@@ -70,16 +71,25 @@ header {
   	-moz-background-clip:    padding; 
   	background-clip:         padding-box;
 }
+/*
 header h1 {
 	font-size:4em;
 	margin-top:10px;
 	margin-bottom:0px;
 	padding-top:20px;
 	line-height:1.5em;
-}
+}*/
 header h2 {
 	margin-top:0;
 	padding-top:0;
+}
+#eritrea {
+	float:left;
+	padding-left:20px;
+}
+#ethiopia {
+	float:right;
+	padding-right:20px;
 }
 #contact {
 	font-weight:bold;
@@ -148,35 +158,38 @@ article p {
 }
 .item {
 	text-transform:uppercase;
+	font-size:18px;
 	font-weight:bold;
 }
 section span {
-	display:inline-block;
-	float:right;
-	margin-left:10px;
-	margin-bottom:10px;
+	display: inline-block;
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 10px;
 }
-
-
 footer {
-	text-align:center;
-	background-color:red;
-	color:gold;	
-	-webkit-border-radius:10px 10px 0 0;
-	-moz-border-radius:10px 10px 0 0;
-	border-radius:10px 10px 0 10;
+	text-align: center;
+	background-color: #AF1B1B;
+	height: 1.9em;
+	line-height: 1.9em;
+	color: gold;	
+	-webkit-border-radius: 40px 40px 0 0;
+	-moz-border-radius: 40px 40px 0 0;
+	border-radius: 40px 40px 0 0;
 	
 	-webkit-background-clip: padding-box; 
   	-moz-background-clip:    padding; 
   	background-clip:         padding-box;
 }
-
+/*
 .zeroMargin_mobile {
 margin-left: 0;
 }
 .hide_mobile {
 display: none;
 }
+
+*/
 @media only screen and (min-width: 481px) {
 
 .gridContainer {
