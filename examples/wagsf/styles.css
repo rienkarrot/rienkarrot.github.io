@@ -25,6 +25,15 @@ header a {
 a {
 	font-weight:bold;
 }
+p a:link {
+	color:#750E7F;
+}
+p a:visited {
+	color:gray;
+}
+p a:hover {
+	color:#FB6906;
+}
 nav {
 }
 .navbar {
@@ -62,15 +71,16 @@ nav {
 	display:none;
 }
 .map {
-	text-align:center;	
+	text-align:center;
+	margin:20px auto;	
 }
-.map img {
+/*.map img {
 	margin:20px;
 	padding:2px;
 	border:1px solid black;
 	height:650px;
 	width:750px;
-}
+}*/
 .calendar-img {
 	text-align:center;
 }
@@ -83,6 +93,12 @@ p {
 	padding-right:30px;
 	font-size:16pt;
 }
+.vert {
+	height:50px;
+}
+.disclaimer {
+	font-size:12pt;
+}
 footer{
 	height:2em;
 	line-height:2em;
@@ -94,7 +110,7 @@ footer{
 		font-size:3em;
 	}
 	h3 {
-		font-size:22px;
+		font-size:18pt;
 	}
 	p {
 		padding-left: 50px;
@@ -126,6 +142,22 @@ footer{
 		background-color:white;
 		color:black;
 	}
+	.coffee {
+		float:left;
+		display:inline;
+		width:180px;
+		height:239px;
+		padding:0 30px 10px 0;
+	}
+	.logo-small {
+		display:inline;
+		float:left;
+		clear:left;
+		height:65px;
+		width:100px;
+		padding-right:20px;
+		
+	}
 }
 @media screen and (min-width:1000px) {
 	.container {
@@ -142,18 +174,12 @@ footer{
 	h1{
 		padding-top:25px;
 	}
-	p img {
-		float:left;
-		display:inline;
-		width:180px;
-		height:239px;
-		padding:0 30px 10px 0;
-	}
 	p {
 		padding-right:20%;
 		padding-left:20%;
 	}
-	.navbar a  {
+
+	.navbar a {
 		border-top:none;
 	}
 	footer {
