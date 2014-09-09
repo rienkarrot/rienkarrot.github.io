@@ -28,7 +28,7 @@ img, object, embed, video {
     list-style:none;
     list-style-image:none;
     margin:0;
-    padding:0;        
+    padding:0;
 }*/
 
 /* Mobile Layout: 481px and below. */
@@ -36,6 +36,7 @@ img, object, embed, video {
 .gridContainer {
 	margin: 0 auto;
 	width: 95%;
+	max-width:768px; /*max before switching media queries. currently have no solution for IE8 media queries*/
 	padding: 0;
 	clear: none;
 	float: none;
@@ -51,7 +52,7 @@ nav {
 	background-color:#FFE76B;
 	color:red;
 	
-	-webkit-border-radius:0 0 40px 40px;
+	-webkit-border-radius:0 0 40px 40px; /*no fix for IE8*/
 	-moz-border-radius:0 0 40px 40px;
 	border-radius:0 0 40px 40px;
 	
@@ -60,12 +61,56 @@ nav {
   	background-clip:         padding-box;
 	
 }
+#logo-wrapper {
+	background-color:#D71300;
+	padding-bottom:20px;
+	
+	-webkit-border-radius:40px;
+	-moz-border-radius:40px;
+	border-radius:40px;
+	
+	-webkit-background-clip: padding-box; 
+  	-moz-background-clip:    padding; 
+  	background-clip:         padding-box;
+}
+#logo-and-flag-wrapper {
+	max-width:500px;
+	margin:0 auto;
+}
 #logo {
 	padding-top:20px;
 	max-width:444px;
 	max-height:420px;
 	width:auto;
 	height:auto;
+}
+#about {
+	width:90px;
+	height:17px;
+	float:left;
+	margin:25px auto;
+}
+#about a:link {
+	padding:10px auto;
+}
+#eritrea, #ethiopia {
+	border: 1px solid #FFF8CE;
+	margin:0;
+}
+#eritrea {
+	margin-left:78px;
+	float:left;
+}
+#ethiopia {
+	margin-right:78px;
+	float:right;
+}
+#contact {
+	clear:both;
+	font-weight:bold;
+	font-size:1.3em;
+	margin:0 auto;
+	padding-bottom:10px;
 }
 header {
 	margin-top:10px;
@@ -96,37 +141,6 @@ header h2 {
 	margin-top:10px;
 	margin-bottom:10px;
 	padding:0;
-}
-#eritrea/*, #ethiopia*/ {
-	border: 1px solid #FFF8CE;
-	/*margin-bottom:15px;*/
-}
-#eritrea {
-	margin:0 auto;
-}
-/*#ethiopia {
-	float:right;
-	
-}*/
-#logo-wrapper {
-	background-color:#D71300;
-	padding-bottom:20px;
-	margin-bottom:10px;
-	
-	-webkit-border-radius:40px;
-	-moz-border-radius:40px;
-	border-radius:40px;
-	
-	-webkit-background-clip: padding-box; 
-  	-moz-background-clip:    padding; 
-  	background-clip:         padding-box;
-}
-#contact {
-	clear:both;
-	font-weight:bold;
-	font-size:1.3em;
-	margin:0 auto;
-	padding-bottom:10px;
 }
 section {
 	padding-left:10%;
@@ -241,13 +255,6 @@ display: none;
 	float: none;
 	margin-left: auto;
 }
-/*
-#eritrea {
-	margin-left:32%;
-}
-#ethiopia {
-	margin-right:32%;
-}*/
 
 /*.zeroMargin_tablet {
 margin-left: 0;
@@ -271,13 +278,7 @@ nav {
 }
 header {
 	width:100%;	
-}/*
-#eritrea {
-	margin-left:35%;
 }
-#ethiopia {
-	margin-right:35%;
-}*/
 article {
 	
 }
