@@ -29,12 +29,12 @@ h6 a {
 }
 #header {
 	text-align:center;
-	background-color: #3EAC3E;
+	background-color: #768FA1;
 	float:left;
 	width:100%;
 	font-family: "Varela Round", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 	/*font-family: 'Varela Round', sans-serif;*/
-	background-color: #75CD75;
+	font-size:16pt;
 	color: white;
 }
 #article-wrapper {
@@ -104,9 +104,9 @@ h6 a {
 		display:block;
 		float:left;
 		width:100%;
-		background-color:#A6BCDB;
-		font: bold 1em "Trebuchet MS", Verdana, sans-serif;
-		text-shadow: 3px 3px 8px rgba(255, 255, 255, .9);
+		background-color:#9EACC1;
+		font: bold 16pt "Trebuchet MS", Verdana, sans-serif;
+		text-shadow: 2px 3px 6px rgba(182,197,219,0.8);
 		/*box-shadow: inset 0px 0px 4px 3px rgba(255,255,255,.7);*/
 		
 	}
@@ -120,7 +120,6 @@ h6 a {
 		/*list-style-type:none;*/
 		width:100%;
 		height:3.5em;
-		
 	}
 	#navbar a {
 		padding:15px 0;
@@ -128,8 +127,11 @@ h6 a {
 		width:25%;
 		text-decoration:none;
 		color:#2D2C70;
-		
 		box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,.7);
+	}
+	#navbar a:hover {
+		background-color:#434952;
+		color:white;
 	}
 	#navbar a:visited {
 		color:#2D2C70;
@@ -146,7 +148,7 @@ h6 a {
 }
 @media all and (min-width: 1200px) {
 	.container {
-		width: 900px;
+		width: 1200px;
 		/*background-color: #FC9;*/
 		margin: 0 auto;
 		/*float: none;*/
@@ -161,6 +163,31 @@ h6 a {
 	.middle-content-wrapper {
 		background-color:white;
 		width:100%;
+	}
+	.article {
+		width:90%;
+		height:100%;
+	}
+	img {
+		float:left;
+	}/*
+	.img-wrapper {
+		background-color:black;
+		padding:0;
+		margin:0;
+		width:600px;
+		height:500px;
+	}*/
+	.text {
+		margin:0;
+		padding:0;
+		text-align:left;
+		width:400px;
+		display:block;
+		float:right;
+	}
+	h6 {
+		clear:both;
 	}
 	/*
 	#navbar {
@@ -225,7 +252,9 @@ h6 a {
 		<h2>Website Work - Design and Development</h2>
 			<div class="article">
                 <h3><a name="one"></a>Project One: Portfolio for Kathryn</h3>
-                <a href="examples/kathryn/index.html"><img src="img/kathryn-thumb.jpg" alt="Link to Example Project One" title="A snapshot of Kathryn's skillset in website form." /></a>
+                <h4>Now live at: http://www.kathrynchurchill.com/</h4>
+                <div class="img-wrapper"><a href="examples/kathryn/index.html"><img src="img/kathryn-thumb.jpg" alt="Link to Example Project One" title="A snapshot of Kathryn's skillset in website form." /></a></div><!--end img wrapper-->
+                <div class="text">
                 <h3>Project Overview:</h3>
                 <p>I made this site as a reflection of Kathryn's LinkedIn presence, and based the design and colors off of an abstract interpretation of office filing. I used this opportunity to practice readable, clear code structure meant for others to edit.</p>
                 <h3>The Requirement:</h3>
@@ -247,11 +276,14 @@ h6 a {
                 </ul></p>
                 <h3>The Results:</h3>
                 <p>A consistent, fast-loading, professional portfolio website.</p>
+                </div><!--end text-->
 			<h6><a href="#top">to top</a></h6>                
         	</div><!--end article div-->
 			<div class="article">
 			<h3><a name="two"></a>Project Two: Event Page for WAG SF</h3>
+            <h4>http://www.wag-sf.com/</h4>
             <a href="examples/wagsf/index.html"><img src="img/wagsf-thumb.jpg" alt="Link to Example Project Two" title="A permanent website for a recurring event listed on Eventbrite." /></a>
+            <div class="text">
 			<h3>Project Overview:</h3>
                 <p>This site is an expansion on the Eventbrite page for a local social group.</p>
                 <h3>The Requirement:</h3>
@@ -270,11 +302,13 @@ h6 a {
                 </ul></p>
                 <h3>The Results:</h3>
                 <p>A responsive, simple site with all the facts.</p>
+                </div><!--end text-->
                 <h6><a href="#top">to top</a></h6>  
                 </div><!--end article div-->
 		<div class="article">
 			<h3><a name="three"></a>Project Three: Non-Profit Mockup</h3>
             <a href="examples/nonprofit/index.html"><img src="img/nonprofit-thumb.jpg" alt="Link to Example Project Three" title="Mockup of a referral site meant for social case workers."/></a>
+            <div class="text">
 			<h3>Project Overview:</h3>
                 <p>I started this site design with the idea that many case workers need a quick resource on their phones to assist with referrals. The final project will involve a database of most San Francisco non-profits.</p>
                 <h3>The Requirement:</h3>
@@ -295,11 +329,14 @@ h6 a {
                 </ul></p>
                 <h3>The Results:</h3>
                 <p>A simple, straightforward design with potential.</p>
+                </div>
                 <h6><a href="#top">to top</a></h6>  
                 </div><!--end article div-->
         <div class="article">
 			<h3><a name="four"></a>Project Four: Oasis Cafe</h3>
+            <h4>Coming Soon @ OasisCafeSF.com</h4>
             <a href="examples/oasis/index.html" alt="Link to Example Project Four" title="The mobile website for a local cafe."><img src="img/oasiscafe-thumb.jpg" /></a>
+            <div class="text">
 			<h3>Project Overview:</h3>
                 <p>I wanted to make a quick-reference, mobile site for one of my favorite cafes, which happened to be lacking one.</p>
                 <h3>The Requirement:</h3>
@@ -320,6 +357,7 @@ h6 a {
                 </ul></p>
                 <h3>The Results:</h3>
                 <p>A simple but strong design with extra attention for compatibility.</p>
+                </div><!--end text-->
                 <h6><a href="#top">to top</a></h6>  
         </div><!--end article div-->
 	</div><!--end article wrapper div-->
