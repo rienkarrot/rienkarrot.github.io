@@ -88,10 +88,11 @@ nav {
 	width:90px;
 	height:17px;
 	float:left;
-	margin:25px auto;
+	margin:25px 5% 5% 5%;
 }
 #about a:link {
 	padding:10px auto;
+	color:gold;
 }
 #eritrea, #ethiopia {
 	border: 1px solid #FFF8CE;
@@ -184,12 +185,41 @@ section h4 {
 	margin:0 10px;
 	color:red;
 }
-.links a:hover, .links a:active {
+.links a:hover, .links a:active, #about a:hover, #about a:active{
 	color:white;
 	text-decoration:none;
 }
+#about a:visited {
+	color:gold;
+}
 .links a:visited {
 	color:red;
+}
+article.about-body {
+	background-color:#AF1B1B;
+	color:white;
+	padding-left:10%;
+	padding-right:10%;
+	max-width:960px;
+	-webkit-border-radius:40px;
+	-moz-border-radius:40px;
+	border-radius:40px;
+	
+	-webkit-background-clip: padding-box; 
+  	-moz-background-clip:    padding; 
+  	background-clip:         padding-box;
+}
+article.about-body a:link, .about-body a:visited {
+	color:gold;
+}
+article.about-body a:active, .about-body a:hover {
+	color:red;
+}
+article.about-body h2 {
+	padding:40px 20px 10px 20px;
+}
+article.about-body p {
+	padding:10px 40px 30px 50px;
 }
 section.ethiopian-menu {
 	background-color: #52BD63;
@@ -274,13 +304,10 @@ display: none;
 	
 }
 nav {
-	display:none;
+	/*display:none;*/
 }
 header {
 	width:100%;	
-}
-article {
-	
 }
 .menu-main-title {
 	float:none;
@@ -293,7 +320,7 @@ article {
 	margin-top:20px;
 }
 .links {
-	display:none;
+	/*display:none;*/
 }
 .american-menu {
 	margin-left:15px;
@@ -308,12 +335,16 @@ section {
 	padding-right:20px;
 	
 }
-section span {
-	
+article p {
+	padding:0;
+}
+article.about-body {
+	width:100%;
+	padding:0 auto;
+	margin-bottom:20px;
 }
 footer {
 	clear:both;
-	
 }
 .zeroMargin_desktop {
 margin-left: 0;
