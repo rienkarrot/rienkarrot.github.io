@@ -1,11 +1,21 @@
 @charset "utf-8";
 
+html {
+	font-size:1em
+}
+
 body {
 	background:#FFF6E1;
 	margin:0;
 	padding:0;
+	font-size:100%;
 	font-family:"Aclonica", sans-serif;
+	line-height:1;
 }
+a img, :link img, :visited img {
+	border: 0;
+}
+
 img, object, embed, video {
 	max-width: 100%;
 	max-height: 100%;
@@ -44,6 +54,14 @@ img, object, embed, video {
 }
 /*custom*/
 
+nav, header, footer {
+	min-width:460px;
+}
+
+section {
+	min-width:400px;
+}
+
 nav {
 	text-align:center;
 	font-size:1.3em;
@@ -67,44 +85,52 @@ nav {
 	
 	-webkit-border-radius:40px;
 	-moz-border-radius:40px;
-	border-radius:40px;
+	border-radius:40px;sS
 	
 	-webkit-background-clip: padding-box; 
   	-moz-background-clip:    padding; 
   	background-clip:         padding-box;
 }
 #logo-and-flag-wrapper {
-	max-width:500px;
+	max-width:460px;
 	margin:0 auto;
 }
 #logo {
 	padding-top:20px;
+	min-width:50%;
+	min-height:auto;
 	max-width:444px;
 	max-height:420px;
 	width:auto;
 	height:auto;
 }
-#about {
-	width:90px;
-	height:17px;
-	float:left;
-	margin:25px 5% 5% 5%;
-}
 #about a:link {
-	padding:10px auto;
 	color:gold;
+	width:100px;
+	height:52px;
+	float:left;
+	display:inline;
+	padding: 0 20px;
+	margin:25px 0 0 0;
+	font-size:1.2em;
+}
+#flag-wrapper {
+	width:360px;
+	margin:0 auto;
 }
 #eritrea, #ethiopia {
+	padding:0;
 	border: 1px solid #FFF8CE;
 	margin:0;
 }
 #eritrea {
-	margin-left:78px;
+	margin-left:auto;
 	float:left;
 }
 #ethiopia {
-	margin-right:78px;
-	float:right;
+	margin-right:auto;
+	float:left;
+	display:inline;
 }
 #contact {
 	clear:both;
@@ -230,7 +256,9 @@ section.american-menu {
 section.drinks {
 	background-color:gold;
 }
-
+section.drinks .item {
+	width:200px;
+}
 article p {
 	margin: 5px auto;
 	padding-top: 5px;
@@ -249,10 +277,16 @@ span {
 	margin-bottom:20px;
 }
 
-/*.drinks span {
-	padding:0;
+
+.drinks span {
+	width:60px;
+	padding-left:0.1%;
+	text-align:right;
+}
+.drink-sizes span {
+	padding-left:3%;
 	margin:0;
-}*/
+}
 footer {
 	text-align: center;
 	background-color: #AF1B1B;
@@ -268,7 +302,7 @@ footer {
   	background-clip:         padding-box;
 }
 /*
-.zeroMargin_mobile {
+.zeroMargin_mobile {SS
 margin-left: 0;
 }
 .hide_mobile {
@@ -285,7 +319,9 @@ display: none;
 	float: none;
 	margin-left: auto;
 }
-
+section.drinks .item {
+	width: 500px;
+}
 /*.zeroMargin_tablet {
 margin-left: 0;
 }
