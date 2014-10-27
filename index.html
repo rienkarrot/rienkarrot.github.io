@@ -8,11 +8,15 @@
 <script>
 </script>
 <style>
+html {
+	font-size:1em
+}
 body {
 	background-color: black;
 	margin: 0;
 	padding:0;
 	width:100%;
+	line-height:1;
 	font-family:"Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
 }
 img {
@@ -80,7 +84,7 @@ h6 a {
 	/*background-color:black;*/
 	margin: 0 0 50px 0;
 }
-@media all and (min-width: 760px) {
+@media all and (min-width: 860px) {
 	img {
 		height:450px;
 		width:600px;
@@ -104,6 +108,8 @@ h6 a {
 		display:block;
 		float:left;
 		width:100%;
+		height:80px;
+		overflow:visible;
 		background-color:#9EACC1;
 		font: bold 16pt "Trebuchet MS", Verdana, sans-serif;
 		text-shadow: 2px 3px 6px rgba(182,197,219,0.8);
@@ -119,7 +125,7 @@ h6 a {
 		text-align:center;
 		/*list-style-type:none;*/
 		width:100%;
-		height:3.5em;
+		height:80px;
 	}
 	#navbar a {
 		padding:15px 0;
@@ -157,20 +163,43 @@ h6 a {
 		
 		padding: 10px 0px 10px 0px;
 	}
-	#navbar {
-		
-	}
 	.middle-content-wrapper {
 		background-color:white;
 		width:100%;
 	}
+	#article-wrapper {
+		background-color:#ABA6AF;
+		background: -webkit-linear-gradient(#ABA6AF, black); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(#ABA6AF, black); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(#ABA6AF, black); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(#ABA6AF, black); /* Standard syntax (must be last) */
+		/*background-color: #F93;*/
+		
+		/*width: 80%;*/
+	}
 	.article {
+		position:relative;
 		width:90%;
 		height:100%;
 	}
+	.img-wrapper {
+		position:absolute;
+		top:100px;
+		bottom:50px;
+	}
+	.img-wrapper:before {
+		content:' ';
+		display:inline-block;
+		vertical-align:middle;
+		height:100%;
+	}
 	img {
-		float:left;
-	}/*
+		vertical-align:middle;
+	}
+	.article li {
+		padding-left:0px;
+	}
+	/*
 	.img-wrapper {
 		background-color:black;
 		padding:0;
@@ -207,17 +236,7 @@ h6 a {
 		line-height:3em;		
 	}
 	*/
-	#article-wrapper {
-		background-color:#ABA6AF;
-		background: -webkit-linear-gradient(#ABA6AF, black); /* For Safari 5.1 to 6.0 */
-		background: -o-linear-gradient(#ABA6AF, black); /* For Opera 11.1 to 12.0 */
-		background: -moz-linear-gradient(#ABA6AF, black); /* For Firefox 3.6 to 15 */
-		background: linear-gradient(#ABA6AF, black); /* Standard syntax (must be last) */
-		/*background-color: #F93;*/
-		
-		/*width: 80%;*/
-	}
-	
+
 }
 </style>
 </head>
@@ -240,11 +259,12 @@ h6 a {
             	<li><a href="#one">Project One:<br />
                 	Portfolio for Kathryn</a></li>
                 <li><a href="#two">Project Two:<br />
-                	Event Page for WAG SF</a></li>
-                <li><a href="#three">Project Three:<br />
-                	Non-Profit Mockup</a></li>
-                <li><a href="#four">Project Four:<br />
                 	Oasis Cafe</a></li>
+                <li><a href="#three">Project Three:<br />
+                	Event Page WAG SF</a></li>
+                <li><a href="#four">Project Four:<br />
+                	Non-Profit Mockup</a></li>
+                
         	</ul>
         </div><!--end navbar div-->
         
@@ -279,63 +299,10 @@ h6 a {
                 </div><!--end text-->
 			<h6><a href="#top">to top</a></h6>                
         	</div><!--end article div-->
-			<div class="article">
-			<h3><a name="two"></a>Project Two: Event Page for WAG SF</h3>
-            <h4>http://www.wag-sf.com/</h4>
-            <a href="examples/wagsf/index.html"><img src="img/wagsf-thumb.jpg" alt="Link to Example Project Two" title="A permanent website for a recurring event listed on Eventbrite." /></a>
-            <div class="text">
-			<h3>Project Overview:</h3>
-                <p>This site is an expansion on the Eventbrite page for a local social group.</p>
-                <h3>The Requirement:</h3>
-                <p>
-                	<ul>
-                    	<li>Create a casual and welcoming site.</li>
-                    	<li></li>
-                	</ul>
-                </p>
-                <h3>The Solution:</h3>
-                <p><ul>
-                    <li>Create menu that changes depending on screen size.</li>
-                    <li></li>
-                    <li></li>
-                    <li>Start research for map and calendar options.</li>
-                </ul></p>
-                <h3>The Results:</h3>
-                <p>A responsive, simple site with all the facts.</p>
-                </div><!--end text-->
-                <h6><a href="#top">to top</a></h6>  
-                </div><!--end article div-->
-		<div class="article">
-			<h3><a name="three"></a>Project Three: Non-Profit Mockup</h3>
-            <a href="examples/nonprofit/index.html"><img src="img/nonprofit-thumb.jpg" alt="Link to Example Project Three" title="Mockup of a referral site meant for social case workers."/></a>
-            <div class="text">
-			<h3>Project Overview:</h3>
-                <p>I started this site design with the idea that many case workers need a quick resource on their phones to assist with referrals. The final project will involve a database of most San Francisco non-profits.</p>
-                <h3>The Requirement:</h3>
-                <p>
-                	<ul>
-                    	<li>A website for case worker's quick reference.</li>
-                    	<li>A design that will work on small screens well.</li>
-                    	<li>Visually clear and an intuitive function.</li>
-                    	<li>Clean HTML that can be edited to add more items in the future.</li>
-                	</ul>
-                </p>
-                <h3>The Solution:</h3>
-                <p><ul>
-                    <li>Restrict formatting to keep very consistent design that favors mobile use.</li>
-                    <li>Load everything within one page to avoid multi-page confusion.</li>
-                    <li>Create dropdown menu in CSS3 instead of Javascript.</li>
-                    <li>Begin research on how to design text search within site.</li>
-                </ul></p>
-                <h3>The Results:</h3>
-                <p>A simple, straightforward design with potential.</p>
-                </div>
-                <h6><a href="#top">to top</a></h6>  
-                </div><!--end article div-->
-        <div class="article">
-			<h3><a name="four"></a>Project Four: Oasis Cafe</h3>
+            <div class="article">
+			<h3><a name="two"></a>Project Two: Oasis Cafe</h3>
             <h4>Coming Soon @ OasisCafeSF.com</h4>
-            <a href="examples/oasis/index.html" alt="Link to Example Project Four" title="The mobile website for a local cafe."><img src="img/oasiscafe-thumb.jpg" /></a>
+            <div class="img-wrapper"><a href="examples/oasis/index.html" alt="Link to Example Project Four" title="The mobile website for a local cafe."><img src="img/oasiscafe-thumb.jpg" /></a></div>
             <div class="text">
 			<h3>Project Overview:</h3>
                 <p>I wanted to make a quick-reference, mobile site for one of my favorite cafes, which happened to be lacking one.</p>
@@ -360,9 +327,60 @@ h6 a {
                 </div><!--end text-->
                 <h6><a href="#top">to top</a></h6>  
         </div><!--end article div-->
-	</div><!--end article wrapper div-->
-
-        
+			<div class="article">
+			<h3><a name="three"></a>Project Three: Event Page for WAG SF</h3>
+            <h4>http://www.wag-sf.com/</h4>
+            <div class="img-wrapper"><a href="examples/wagsf/index.html"><img src="img/wagsf-thumb.jpg" alt="Link to Example Project Two" title="A permanent website for a recurring event listed on Eventbrite." /></a></div>
+            <div class="text">
+			<h3>Project Overview:</h3>
+                <p>This site is an expansion on the Eventbrite page for a local social group.</p>
+                <h3>The Requirement:</h3>
+                <p>
+                	<ul>
+                    	<li>Create a casual and welcoming site.</li>
+                    	<li></li>
+                	</ul>
+                </p>
+                <h3>The Solution:</h3>
+                <p><ul>
+                    <li>Create menu that changes depending on screen size.</li>
+                    <li></li>
+                    <li></li>
+                    <li>Start research for map and calendar options.</li>
+                </ul></p>
+                <h3>The Results:</h3>
+                <p>A responsive, simple site with all the facts.</p>
+                </div><!--end text-->
+                <h6><a href="#top">to top</a></h6>  
+                </div><!--end article div-->
+		<div class="article">
+			<h3><a name="four"></a>Project Four: Non-Profit Mockup</h3>
+            <div class="img-wrapper"><a href="examples/nonprofit/index.html"><img src="img/nonprofit-thumb.jpg" alt="Link to Example Project Three" title="Mockup of a referral site meant for social case workers."/></a></div>
+            <div class="text">
+			<h3>Project Overview:</h3>
+                <p>I started this site design with the idea that many case workers need a quick resource on their phones to assist with referrals. The final project will involve a database of most San Francisco non-profits.</p>
+                <h3>The Requirement:</h3>
+                <p>
+                	<ul>
+                    	<li>A website for case worker's quick reference.</li>
+                    	<li>A design that will work on small screens well.</li>
+                    	<li>Visually clear and an intuitive function.</li>
+                    	<li>Clean HTML that can be edited to add more items in the future.</li>
+                	</ul>
+                </p>
+                <h3>The Solution:</h3>
+                <p><ul>
+                    <li>Restrict formatting to keep very consistent design that favors mobile use.</li>
+                    <li>Load everything within one page to avoid multi-page confusion.</li>
+                    <li>Create dropdown menu in CSS3 instead of Javascript.</li>
+                    <li>Begin research on how to design text search within site.</li>
+                </ul></p>
+                <h3>The Results:</h3>
+                <p>A simple, straightforward design with potential.</p>
+                </div>
+                <h6><a href="#top">to top</a></h6>  
+                </div><!--end article div-->
+			</div><!--end article wrapper div-->
         </div><!--end middle content wrapper div-->
 	<div id="footer">&copy; 2014 Ri'en Karrot</div><!--end footer div-->
 	</div><!--end container div-->
