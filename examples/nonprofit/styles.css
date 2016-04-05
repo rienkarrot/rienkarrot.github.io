@@ -193,13 +193,13 @@ nav ul ul li {
     
 @media all and (min-width: 700px) {
 	.container {
-		padding:20px;
-		margin:auto;
-		width:90%;
-		max-width:800px;
+		padding:5px 35px;
+		margin:0 auto;
+		width:85%;
+		max-width:500px;
 		}
     .center-content {
-        width:600px;
+        width:500px;
         margin:0 auto;
         }
 }
