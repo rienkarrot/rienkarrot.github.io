@@ -16,10 +16,11 @@ h4 {
 	color:black;
 	margin:0;
 }
+/*
 .show {display: none; }
 .hide:focus + .show {display: inline; }
 .hide:focus { display: none; }
-.hide:focus ~ #list { display:none; }
+.hide:focus ~ #list { display:none; }*/
 
 .container {
 	background-color:gray;
@@ -105,35 +106,78 @@ h4 {
     border:0;
     padding:0;
 }
-.menu {
+
+/* navigation styling */
+nav {
 	text-transform: uppercase;
 	text-align:left;
 	background-color:#8FA4B0;
 	padding:25px;
 	margin:0 auto;
+    border-radius:15px;
 	letter-spacing:2px;
-	}
-.menu-img {
+    
+}
+.nav-img {
 	text-align:center;
 }
-.menu ul {
+nav ul {
 	list-style-type:none;
 	margin:0;
-	}
-.menu a {
-	width:60px;
+    padding: 0 0 0 20px;
+	border-radius: 10px;  
+	list-style: none;
+	/*position: relative;*/
+	/*display: inline-table;*/
+}
+nav ul:after {
+	content: "";
+	clear: both;
+	/*display: block;*/
+}
+nav ul li:hover > ul {
+	display: block;
+}
+nav a {
 	text-decoration:none;
 	color:#C4E9FF;
-	}
-.menu li {
+}
+nav li {
 	color:black;
-	}
+}
+nav ul li a {
+	display: block;
+	text-decoration: none;
+}
+nav ul li a.active {
+    color:white;
+}
+nav ul li a:hover:not(.active) {
+    background-color:#555;
+    color:white;
+}
+nav ul ul {
+	display: none;
+    border-radius: 0px;
+    /*padding: 0;*/
+}
+nav ul ul ul {
+	left: 100%;
+	top:0;
+}
+nav ul ul li {
+	float: none;
+	position: relative;
+}
+
 #breadcrumbs {
 	margin:inherit;
 	width:360px;
 	height:35px;
 	line-height:35px;
 	}
+
+/* information */
 .detail {
 	text-align:left;
 	color:white;
@@ -145,11 +189,17 @@ h4 {
 	padding-left:15px;
 	padding-right:30px;
 	}
+    
+    
 @media all and (min-width: 700px) {
 	.container {
 		padding:20px;
 		margin:auto;
-		width:70%;
-		max-width:600px;
+		width:90%;
+		max-width:800px;
 		}
+    .center-content {
+        width:600px;
+        margin:0 auto;
+        }
 }
